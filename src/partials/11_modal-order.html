@@ -1,0 +1,156 @@
+<section>
+  <div class="container-order" id="modal-order">
+    <div class="order-window">
+      <button type="button" class="btn-close close">
+        <svg class="order-close-icon" width="28" height="28">
+          <use href="/img/svg_sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <div class="order-container">
+        <h2 class="order-title">
+          <span class="buy">Buy</span><span class="now"> Now</span>
+        </h2>
+        <ul class="order-list-prise">
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="/img/chocolate-pieces_167x148.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-100"
+                class="order-form-checkbox"
+                name="prise-item-100"
+                required
+              />
+              <label for="prise-item-100" class="modal-lable checkbox"
+                ><span class="one-part">100 g</span>
+              </label>
+            </div>
+          </li>
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="/img/chocolate-pieces-piramid_167x148.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-200"
+                class="order-form-checkbox"
+                name="prise-item-200"
+                required
+              />
+              <label for="prise-item-200" class="modal-lable checkbox"
+                ><span class="two-parts">200 g</span>
+              </label>
+            </div>
+          </li>
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="/img/transparent-chocolate-bar_120x111.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-300"
+                class="order-form-checkbox"
+                name="prise-item-300"
+                required
+              />
+              <label for="prise-item-300" class="modal-lable checkbox"
+                ><span class="three-parts">300 g</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+        <ul class="order-list"></ul>
+        <div class="order-tumb">
+          <ul class="order-data">
+            <li class="order-data-item">
+              <div class="data-item">
+                Personal information
+                <div class="person-order">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    id="user-name"
+                    class="order-point"
+                    pattern="^[a-zA-Z]+$"
+                    minlength="2"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Surname"
+                    name="user_surname"
+                    class="order-point"
+                    pattern="^[a-zA-Z]+$"
+                    minlength="2"
+                    required
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="order-data-item">
+              <label class="data-item"
+                >Email<input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="email"
+                  class="order-point"
+                  required
+              /></label>
+            </li>
+            <li class="order-data-item">
+              <label class="data-item"
+                >Phone number<input
+                  type="tel"
+                  placeholder="Phone number"
+                  name="phone"
+                  class="order-point"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="XXX-XXX-XX-XX"
+                  required
+              /></label>
+            </li>
+            <li class="order-data-item">
+              <label class="data-item"
+                >Card number<input
+                  type="text"
+                  placeholder="Enter card"
+                  name="card_number"
+                  class="order-point"
+                  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                  minlength="12"
+                  maxlength="12"
+                  title="XXXX-XXXX-XXXX-XXXX"
+                  value=""
+                  required
+              /></label>
+            </li>
+            <li class="order-data-item">
+              <label class="data-item"
+                >Coment<textarea
+                  name="coment"
+                  id="coment"
+                  class="order-coment-box"
+                  placeholder="Enter text"
+                ></textarea>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="submit" class="btn-submit" id="open-modal-thanks">
+        Submit
+      </button>
+    </div>
+  </div>
+</section>
